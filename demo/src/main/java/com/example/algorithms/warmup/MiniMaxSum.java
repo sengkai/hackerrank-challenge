@@ -1,9 +1,10 @@
-package com.example;
+package com.example.algorithms.warmup;
 
 import java.util.Scanner;
 
 /**
  * Created by extin on 5/10/2017.
+ * Link: https://www.hackerrank.com/challenges/mini-max-sum
  */
 public class MiniMaxSum {
 

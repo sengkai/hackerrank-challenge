@@ -1,23 +1,28 @@
-package com.example.implementation;
+package com.example.algorithms.implementation;
 
 import java.util.Scanner;
 
 /**
- * Created by extin on 5/10/2017.
+ * Created by extin on 5/13/2017.
  * Link: https://www.hackerrank.com/challenges/grading
  */
-public class GradingStudents {
+public class GradingStudent {
+
     static int[] solve(int[] grades) {
         int[] finalGrade = new int[grades.length];
         // Complete this function
         for (int i = 0; i < grades.length; i++) {
-            if ((Math.round(grades[i]) - grades[i]) < 3) {
-                finalGrade[i] = Math.round(grades[i]);
+            if (grades[i] >= 38 && (grades[i] % 5) >= 3) {
+                finalGrade[i] = roundUp(grades[i]);
             } else {
                 finalGrade[i] = grades[i];
             }
         }
         return finalGrade;
+    }
+
+    private static int roundUp(int result) {
+        return result + 5 - result % 5;
     }
 
     public static void main(String[] args) {
@@ -32,7 +37,5 @@ public class GradingStudents {
             System.out.print(result[i] + (i != result.length - 1 ? "\n" : ""));
         }
         System.out.println("");
-
-
     }
 }

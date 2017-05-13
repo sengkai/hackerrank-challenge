@@ -1,4 +1,4 @@
-package com.example;
+package com.example.algorithms.warmup;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 /**
  * Created by extin on 5/10/2017.
+ * Links: https://www.hackerrank.com/challenges/time-conversion
  */
 public class TimeConversion {
 
